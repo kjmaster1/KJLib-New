@@ -6,6 +6,7 @@ import com.kjmaster.kjlib.network.IServerCommand;
 import com.kjmaster.kjlib.preferences.PreferencesProperties;
 import com.kjmaster.kjlib.setup.ClientSetup;
 import com.kjmaster.kjlib.setup.ModSetup;
+import com.kjmaster.kjlib.setup.Registration;
 import com.kjmaster.kjlib.syncpositional.PositionalDataSyncer;
 import com.kjmaster.kjlib.typed.TypedMap;
 import com.mojang.logging.LogUtils;
@@ -55,6 +56,8 @@ public class KJLib
     public KJLib()
     {
         instance = this;
+
+        Registration.init();
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(setup::init);
 

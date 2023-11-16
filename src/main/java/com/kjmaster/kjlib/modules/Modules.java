@@ -1,5 +1,6 @@
 package com.kjmaster.kjlib.modules;
 
+import com.kjmaster.kjlib.datagen.DataGen;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 
@@ -26,5 +27,9 @@ public class Modules {
 
     public void initClient(FMLClientSetupEvent event) {
         modules.forEach(m -> m.initClient(event));
+    }
+
+    public void datagen(DataGen dataGen) {
+        modules.forEach(m -> m.initDatagen(dataGen));
     }
 }

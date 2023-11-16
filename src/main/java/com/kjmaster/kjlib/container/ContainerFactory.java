@@ -14,7 +14,7 @@ import java.util.function.Predicate;
  * Code from McJtyLib is used in KJLib under the 'MIT License' https://github.com/McJtyMods/McJtyLib/blob/1.20/LICENSE
  *
  * This class can be used to help build containers. It's used in combination with GenericContainer which
- * will take instances of this class to help setup the slots in the container
+ * will take instances of this class to help set up the slots in the container
  */
 public class ContainerFactory {
 
